@@ -1,206 +1,83 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHILIP</title>
+    <style>
+        /* Style for the marquee title */
+        marquee {
+            font-size: 50px; /* Increase title size */
+            color: yellow; /* Highlight the title */
+            background-color: black; /* Add background color for contrast */
+            padding: 20px; /* Add some padding */
+        }
 
-    <title>Galileo Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+        /* Style for the about section */
+        .about-section {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-slate-50 justify-between group/design-root overflow-x-hidden"
-      style='font-family: "Work Sans", "Noto Sans", sans-serif;'
-    >
-      <div>
-        <div class="flex flex-col gap-2 bg-slate-50 p-4 pb-2">
-          <div class="flex items-center h-12 justify-end">
-            <div class="flex w-12 items-center justify-end">
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#0d141c] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
-              >
-                <div class="text-[#0d141c]" data-icon="Notification" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,128v80a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V56A16,16,0,0,1,48,40h80a8,8,0,0,1,0,16H48V208H200V128a8,8,0,0,1,16,0Zm16-68a36,36,0,1,1-36-36A36,36,0,0,1,232,60Zm-16,0a20,20,0,1,0-20,20A20,20,0,0,0,216,60Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
-          <p class="text-[#0d141c] tracking-light text-[28px] font-bold leading-tight">Discover</p>
-        </div>
-        <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Top daily stock movers</h3>
-        <div class="p-4">
-          <div class="flex items-stretch justify-between gap-4 rounded-xl">
-            <div class="flex flex-col gap-1 flex-[2_2_0px]">
-              <p class="text-[#49709c] text-sm font-normal leading-normal">+3%</p>
-              <p class="text-[#0d141c] text-base font-bold leading-tight">Apple Inc. (AAPL)</p>
-              <p class="text-[#49709c] text-sm font-normal leading-normal">$171.14</p>
-            </div>
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/70ba1318-016a-4105-a4b8-6f2dde263890.png");'
-            ></div>
-          </div>
-        </div>
-        <div class="p-4">
-          <div class="flex items-stretch justify-between gap-4 rounded-xl">
-            <div class="flex flex-col gap-1 flex-[2_2_0px]">
-              <p class="text-[#49709c] text-sm font-normal leading-normal">+2%</p>
-              <p class="text-[#0d141c] text-base font-bold leading-tight">Tesla Inc. (TSLA)</p>
-              <p class="text-[#49709c] text-sm font-normal leading-normal">$1,100.14</p>
-            </div>
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/1539975d-7fc0-47c8-9dae-b8ac18202a11.png");'
-            ></div>
-          </div>
-        </div>
-        <div class="p-4">
-          <div class="flex items-stretch justify-between gap-4 rounded-xl">
-            <div class="flex flex-col gap-1 flex-[2_2_0px]">
-              <p class="text-[#49709c] text-sm font-normal leading-normal">+4%</p>
-              <p class="text-[#0d141c] text-base font-bold leading-tight">Amazon.com Inc (AMZN)</p>
-              <p class="text-[#49709c] text-sm font-normal leading-normal">$3,423.45</p>
-            </div>
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/13bb4ed8-7cf0-4317-9f07-18622cf2f277.png");'
-            ></div>
-          </div>
-        </div>
-        <div class="p-4">
-          <div class="flex items-stretch justify-between gap-4 rounded-xl">
-            <div class="flex flex-col gap-1 flex-[2_2_0px]">
-              <p class="text-[#49709c] text-sm font-normal leading-normal">+3%</p>
-              <p class="text-[#0d141c] text-base font-bold leading-tight">Netflix Inc (NFLX)</p>
-              <p class="text-[#49709c] text-sm font-normal leading-normal">$312.09</p>
-            </div>
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/32d42e24-2b2a-4143-b0f5-6e2f08cd71eb.png");'
-            ></div>
-          </div>
-        </div>
-        <div class="p-4">
-          <div class="flex items-stretch justify-between gap-4 rounded-xl">
-            <div class="flex flex-col gap-1 flex-[2_2_0px]">
-              <p class="text-[#49709c] text-sm font-normal leading-normal">+5%</p>
-              <p class="text-[#0d141c] text-base font-bold leading-tight">Meta Platforms (FB)</p>
-              <p class="text-[#49709c] text-sm font-normal leading-normal">$290.12</p>
-            </div>
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
-              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/61a35272-ecba-4a96-91d9-b2eb7a57fa87.png");'
-            ></div>
-          </div>
-        </div>
-        <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">News</h3>
-        <div class="p-4 @container">
-          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-              style='background-image: url("https://cdn.usegalileo.ai/stability/e8dd1fe7-99a3-4ab1-9932-2601289ac49d.png");'
-            ></div>
-            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-              <p class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">The top pick up trucks for 2023 are all electric</p>
-              <div class="flex items-end gap-3 justify-between"><p class="text-[#49709c] text-base font-normal leading-normal">F +0.22%</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 @container">
-          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-              style='background-image: url("https://cdn.usegalileo.ai/stability/218b3e17-d5d4-48d5-8689-83509e34f539.png");'
-            ></div>
-            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-              <p class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Best Buy set to launch a new drone delivery service</p>
-              <div class="flex items-end gap-3 justify-between"><p class="text-[#49709c] text-base font-normal leading-normal">BBY -1.42%</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 @container">
-          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-              style='background-image: url("https://cdn.usegalileo.ai/stability/3517d77d-5917-4efd-b7d6-09932109642b.png");'
-            ></div>
-            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-              <p class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Amazon launches new Kindle with longer battery</p>
-              <div class="flex items-end gap-3 justify-between"><p class="text-[#49709c] text-base font-normal leading-normal">AMZN -0.72%</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-4 @container">
-          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-            <div
-              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-              style='background-image: url("https://cdn.usegalileo.ai/stability/21271289-6079-4667-8c49-5e9300c738db.png");'
-            ></div>
-            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-              <p class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Tesla posts record sales and beats expectations</p>
-              <div class="flex items-end gap-3 justify-between"><p class="text-[#49709c] text-base font-normal leading-normal">TSLA +2.54%</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="flex gap-2 border-t border-[#e7edf4] bg-slate-50 px-4 pb-3 pt-2">
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#0d141c]" href="#">
-            <div class="text-[#0d141c] flex h-8 items-center justify-center" data-icon="ChartLine" data-size="24px" data-weight="fill">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM200,176a8,8,0,0,1,0,16H56a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v62.92l34.88-29.07a8,8,0,0,1,9.56-.51l43,28.69,43.41-36.18a8,8,0,0,1,10.24,12.3l-48,40a8,8,0,0,1-9.56.51l-43-28.69L64,155.75V176Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#49709c]" href="#">
-            <div class="text-[#49709c] flex h-8 items-center justify-center" data-icon="CreditCard" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M224,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48Zm0,16V88H32V64Zm0,128H32V104H224v88Zm-16-24a8,8,0,0,1-8,8H168a8,8,0,0,1,0-16h32A8,8,0,0,1,208,168Zm-64,0a8,8,0,0,1-8,8H120a8,8,0,0,1,0-16h16A8,8,0,0,1,144,168Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#49709c]" href="#">
-            <div class="text-[#49709c] flex h-8 items-center justify-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#49709c]" href="#">
-            <div class="text-[#49709c] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#49709c]" href="#">
-            <div class="text-[#49709c] flex h-8 items-center justify-center" data-icon="UserCircle" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-        </div>
-        <div class="h-5 bg-slate-50"></div>
-      </div>
+        /* Center the iframe */
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Style for the location section with added highlights */
+        .location-section {
+            background-color: #f0f8ff; /* Light blue background */
+            border: 2px solid #007BFF; /* Blue border */
+            padding: 20px; /* Add padding */
+            margin-top: 40px; /* Space from the previous section */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center;
+            color: #333; /* Dark text for contrast */
+        }
+
+        .location-section h2 {
+            color: #007BFF; /* Highlight the heading with blue color */
+        }
+
+        .location-section p {
+            font-size: 18px; /* Set font size for paragraphs */
+        }
+
+        /* Style for the map iframe */
+        .location-section iframe {
+            margin-top: 20px;
+            border-radius: 10px; /* Rounded corners for the map */
+        }
+    </style>
+</head>
+<body>
+    <!-- Scrolling Title -->
+    <marquee behavior="scroll" direction="left">
+        <h1>PHILIP</h1>
+    </marquee>
+
+    <!-- Learn HTML Section -->
+    <div class="about-section">
+        <h2>Learn HTML Through This Video</h2>
+        <p>This video demonstrates how to learn HTML Just In Five Minutes.</p>
     </div>
-  </body>
+
+    <!-- Embedded YouTube Video -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=BBdnfWJL3hTNhpy6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+    </div>
+
+    <!-- Location Section -->
+    <div class="location-section">
+        <h2>START YOUR CAREER IN WEB DESIGNING/UIUX FOR FREE</h2>
+        <p><strong>Address:</strong> City of Joy-Ecstasy, 102 1st floor, JSD, Ashok Nagar, Mulund West, Mumbai, Maharashtra 400080</p>
+        <p>Visit us and kickstart your career in web designing and UI/UX development!</p>
+
+        <!-- Embedded Google Maps Location -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6714.570818675606!2d72.95567793555126!3d19.176605257532987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b85655555555%3A0x879d4596068a3289!2sEcstasy%20Business%20Park!5e0!3m2!1sen!2sin!4v1732822004132!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
 </html>
